@@ -12,4 +12,5 @@ scrapy crawl spider_name --nolog
 方式二
 LOG_ENABLED = False
 LOG_LEVEL = "ERROR"
-
+说明
+https://www.jianshu.com/p/ccc6b7134185
