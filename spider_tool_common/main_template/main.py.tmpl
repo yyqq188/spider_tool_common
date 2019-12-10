@@ -1,0 +1,5 @@
+from scrapy import cmdline
+import time
+cmdline.execute("scrapy crawl ${spider_name} --nolog".split())
+time.sleep(5)
+cmdline.execute("mongoexport -d scrapy_spiders_common -c spider  -f ${field_names} --csv -o /data/${spider_name}.csv ")

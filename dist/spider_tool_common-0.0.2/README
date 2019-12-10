@@ -1,0 +1,19 @@
+这是爬虫工具的通用版本
+原来的打算是
+把该通用工具打包为pip包，并整合到一个docker中
+docker不仅包括pip包，还有安装号的mongodb
+然后写入配置后，可以通过mongodb直接输出为csv文件
+把这一整套就用docker的形式发布
+
+
+后续抽空再完成
+
+
+
+不打印日志
+方式一
+scrapy crawl spider_name --nolog
+方式二
+LOG_ENABLED = False
+LOG_LEVEL = "ERROR"
+
